@@ -7,46 +7,109 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome CDN -->
   <script src="https://kit.fontawesome.com/53ce3ec5ec.js" crossorigin="anonymous"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="service.css"> <!-- Link to the external CSS file -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="blog.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
 
-    <nav class="navbar">
-        <!-- Brand with Logo Image -->
-        <div class="navbar-brand">
-          <img src="image_assets/logo.png" alt="Brand Logo" class="logo-image"> SPOTLESS COMMERICAL CLEANING
-        </div>
-        
-        <!-- Centered Links -->
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#blog">Blog</a></li>
-        </ul>
-    
-        <!-- Contact Button -->s
-        <a href="#contact" class="contact-button">
-          <i class="fas fa-phone-alt"></i> Contact
-        </a>
-        
-        <!-- Hamburger Menu for Mobile -->
-        <div class="hamburger" onclick="toggleNav()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-      
+
+   
       <section class="title">
         <h3>News & Updates</h3>
         <h1>Latest Blog Posts</h1>
-      </section>z
+      </section>
+
+      <div class="main">
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card" tabindex="0">
+              <div class="card_image"><img src="image_assets/c1.jpg" alt="cleaning spray bottle."></div>
+              <div class="card_content">
+                <h2 class="card_title">All-Purpose Cleaner &#x2022; $9</h2>
+                <div class="card_text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi laoreet nisl vitae sapien consequat.</p>
+                  <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p>
+                  <p class="upcharge">Add an extra scrubber for $2 more.</p>
+                </div>
+              </div>
+            </div>
+          </li>
       
-
-
+          <li class="cards_item">
+            <div class="card" tabindex="0">
+              <div class="card_image"><img src="image_assets/c1.jpg" alt="cleaning brush on surface."></div>
+              <div class="card_content">
+                <h2 class="card_title">Ultimate Scrub Brush &#x2022; $18</h2>
+                <div class="card_text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices, eros nec venenatis placerat, velit felis feugiat magna, sit amet faucibus ipsum felis non nulla.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet arcu sit amet <strong>pellentesque convallis, augue purus vehicula sapien.</strong></p>
+                  <p><em>No substitutions please!</em></p>
+                  <p class="upcharge">Add an extra sponge for $2 more, or microfiber cloth for $1.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+      
+          <li class="cards_item">
+            <div class="card" tabindex="0">
+              <div class="card_image"><img src="image_assets/c1.jpg" alt="cleaning supplies in basket."></div>
+              <div class="card_content">
+                <h2 class="card_title">Fresh Fragrance Pack &#x2022; $16</h2>
+                <div class="card_text">
+                  <span class="note">Seasonal.</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut arcu purus. Nullam nec felis est.</p>
+                  <p>Choose your scent: <strong>citrus zest, lavender breeze, or ocean mist.</strong></p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+            
+<section class="footercontainer">
+  <footer class="footer">
+    <div class="fader">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">call</a></li>
+            <li><a href="#">email</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">commercial cleaning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>links</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">fAQ</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </footer>
+</section>
 
 
 </body>

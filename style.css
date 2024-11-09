@@ -15,7 +15,7 @@ body {
 
 .carousel-section {
     width: 100%; /* Set a fixed width */
-    height: 600px; /* Set a fixed height */
+    height: 400px; /* Set a fixed height */
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -24,24 +24,24 @@ body {
 
 .carousel-container {
     width: 100%;
-    height: 100%;
+    height: 400px;
     background-size: cover;
     background-position: center;
     justify-content: center;
-    display: flex;
     color: white;
     font-size: 24px;
     position: absolute;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    overflow: hidden;
 }
 
 .maincontent_crousel{
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 1%;
 }
 .maincontent_crousel h2{
     font-family:    sans-serif;
@@ -69,11 +69,11 @@ body {
 
 
 .maincontent_crousel button {
-    margin-top: 1%;
+    margin-top: 2%;
     padding: 12px 25px;
     font-size: 18px;
-    color: rgb(69, 0, 130);
-    background-color: #ffffff;
+    color: #d1d5db;
+    background-color: #338bf0;
     border: 2px solid #fff;
     border-radius: 70px;
     cursor: pointer;
@@ -86,28 +86,32 @@ body {
     animation: glowing 2s infinite;
 }
 .maincontent_crousel button:hover{
-    background-color: blue;
+    background-color: #d1d5db;
+    color: #338bf0;
     transition: 1s;
 }
 .maincontent_crousel2{
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 100%;
     justify-content: center;
-    margin-top: 20%;   
+    margin-top: 2%;   
 }
 .maincontent_crousel2 h1{
-    font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.74);
+    font-size: 45px;
     border-radius: 10px;
-    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 1%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
-    color: rgb(0, 136, 255);
+    color: #338bf0;
 }
 
 .maincontent_crousel2 p{
     font-size: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
 }
 /* Set the background images for each container */
 #container1 {
@@ -156,7 +160,7 @@ body {
         font-size: 20px;
     }
     .fade3{
-      background-color: #0164e6;
+      background-color: #071a34b7;
     }
 }
 
@@ -172,21 +176,21 @@ body {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 13%;
-  font-size: 15px;
+  padding-top: 5%;
+  font-size: 20px;
   color: white;
 }
 .maintagline h1{
     width: 90%;
-    margin-top: 4%;
+    margin-top: ;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 23px;
+    font-size: 33px;
     color: white;
   }
 
 .fade{
-    background-color: #02164b9f;
+    background-color: #07112dcf;
     height: 200px;
     
 }
@@ -204,12 +208,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #4b6cb7, #182848);
+  background: linear-gradient(90deg, #04182f, #182848);
   padding: 15px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
+  color: #d1d5db;
   transition: padding 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -279,12 +284,12 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ffdd57;
+  color: #338bf0;
 }
 
 /* Contact Button */
 .contact-button {
-  background-color: #ffdd57;
+  background-color: #3f80e2;
   color: #182848;
   padding: 10px 20px;
   border-radius: 25px;
@@ -330,6 +335,63 @@ body {
   background-color: #ffdd57;
 }
 
+/* Position submenu */
+.submenu {
+  position: absolute;
+  top: 100%;
+  
+  background-color: #182848;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: none;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.submenu li {
+  padding: 5px 20px;
+}
+
+.submenu li a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.submenu li a:hover {
+  color: #ffdd57;
+}
+
+/* Display submenu on hover */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.dropdown a {
+  position: relative;
+}
+
+.dropdown a:hover {
+  color: #338bf0;
+}
+
+.dropdown a::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 5px;
+  color: #ffdd57;
+}
+
+.dropdown:hover a::after {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {
@@ -374,7 +436,7 @@ body{
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 a:link,a:active,a:visited,a:hover{
-	color:#3f51b5;
+	color:#d1d5db;
 }
 
 .outerdiv
@@ -556,9 +618,10 @@ a:link,a:active,a:visited,a:hover{
 
 .sectionofdis{
   position: relative;
-  background: url('image_assets/cleaning.jpg') no-repeat center center/cover;
-  padding: 80px 20px;
-  color: white;
+  background-color: #f5f5f9;
+  background: url("Artifical/SPOTLESSWRITEN.jpg") CENTER center/cover;
+  padding: 50px 20px; 
+  color: #04182f;
   text-align: center;
 }
 
@@ -570,7 +633,7 @@ a:link,a:active,a:visited,a:hover{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 123, 255, 0.774); /* Adjust opacity for shade */
+  background-color: #338bf0; /* Adjust opacity for shade */
   z-index: 1;
 }
 
@@ -596,12 +659,12 @@ a:link,a:active,a:visited,a:hover{
 
 /* Item styling */
 .itemd {
-  background-color: rgba(21, 111, 228, 0.9); /* Slight white overlay */
+  background-color: #338bf0; /* Slight white overlay */
   width: 100%;
   color: white;
   max-width: 300px;
   border-radius: 8px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
@@ -620,11 +683,11 @@ a:link,a:active,a:visited,a:hover{
 .itemd h3 {
   font-size: 18px;
   color: #f1f1f1;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .itemd p {
-  font-size: 14px;
+  font-size: 16px;
   color: #d3d3d3;
 }
 
@@ -643,28 +706,29 @@ a:link,a:active,a:visited,a:hover{
   text-align: center;
 }
 .howcanwehelp h1{
-  padding-top: 7%;
-font-size: 30px;
+  padding-top: 2%;
+font-size: 35px;
 width: 80%;
 margin-left: 10%;
 margin-right: 10%;
 }
 .howcanwehelp p{
-  margin-top: 3%;
+  margin-top: 1%;
 margin-left: 5%;
 margin-right: 5%;
 font-weight: 700;
 width: 90%;
+font-size: 20px;
 }
 .howcanwehelp button{
-  margin-top: 7%;
+  margin-top: 2%;
   height: 50px;
   background: url("image_assets/steel.jpg") center cover/center;
-  font-weight: 900;
-width: 200px;
-font-size: 16px;
+  font-weight: 700;
+width: 400px;
+font-size: 24px;
 border-radius: 50px;
-color: #0164e6;
+color: #2f8bcc;
 
 }
 
@@ -692,7 +756,7 @@ color: #0164e6;
 
 .icon {
   font-size: 40px;
-  color: #4CAF50; /* Example color for icons */
+  color: #2f8bcc; /* Example color for icons */
   margin-bottom: 10px;
 }
 
@@ -710,6 +774,7 @@ color: #0164e6;
 justify-content: center;
 text-align: center;
 margin-top: 4%;
+padding-bottom: 4%;
 background-color: #ffffffa4;
 background: linear-gradient(rgb(244, 245, 245), rgb(255, 255, 255));
 }
@@ -735,7 +800,7 @@ font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: normal;
   }
-  
+
 .our_intro {
     transition: all 0.5s;
     -webkit-text-stroke: 3px #000000;
@@ -743,12 +808,12 @@ font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     text-align: center;
     color: transparent;
-    font-family: "Meta", sans-serif;
+font-family: Arial, Helvetica, sans-serif;
     text-shadow: 5px 5px 5px #afdbff,
-      5px 5px 0px #0164e6,
-      10px 10px 0px #0164e6,
-      15px 15px 0px #0164e6,
-      20px 20px 20px #482896;
+      2px 2px 0px #082347,
+      2px 2px 0px #cfd1d3,
+      1px 1px 0px #0164e6,
+      1px 1px 20px #2a93e3;
     cursor: pointer;
     text-transform: uppercase;
   }
@@ -763,6 +828,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 .introimg{
     width: 40%;
+    height: 400px;
     box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.349);
     border-radius: 0% 30px 30px 0%;
 }
@@ -772,17 +838,30 @@ font-family: 'Times New Roman', Times, serif;
     width: 60%;
 }
   .intro h1{
-    font-size: 30px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0164e6;
   }
   .intro p{
     width: 80%;
+    margin-top: 3%;
     margin-left: 10%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     font-size: 16px;
   }
   .contactus{
     margin-top: 20px;
+    width: 40%;
+    height: 10%;
+font-family:  serif;
+    border-radius: 50px;
+    background-color: #0164e6;
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+  .contactus:hover{
+    scale: (1.3);
+    transform:rotate3d(20px,30px,40px) ;
   }
 
   @media (max-width: 480px) {
@@ -849,6 +928,9 @@ font-family: 'Times New Roman', Times, serif;
 text-align: center; 
 background: url("image_assets/car.jpg") center center/cover;
   }
+  .fade2{
+    background-color: #0c223fb6;
+  }
 .why_to_choose h2{
     padding-top: 30px;
     color: rgb(218, 212, 212);
@@ -862,16 +944,17 @@ background: url("image_assets/car.jpg") center center/cover;
   font-size: 40px;
   color: rgb(255, 255, 255);
 }
-.fade2{
+ 2{
     height: fit-content;
-    background-color: rgba(0, 106, 177, 0.719);
+    background-color: rgba(27, 27, 43, 0.85);
 }
   .ag-format-container {
-    width: 1142px;
+    width: 1000px;
     margin: 0 auto;
   }
   a{
     text-decoration: none;
+    color: white;
   }
 
   .ag-courses_box {
@@ -884,7 +967,7 @@ background: url("image_assets/car.jpg") center center/cover;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   
-    padding: 50px 0;
+    padding: 5px 0;
   }
   .ag-courses_item {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
@@ -898,7 +981,7 @@ background: url("image_assets/car.jpg") center center/cover;
   }
   .ag-courses-item_link {
     display: block;
-    padding: 30px 20px;
+    padding: 10px 10px;
     background-color: #121212;
   
     overflow: hidden;
@@ -917,7 +1000,7 @@ background: url("image_assets/car.jpg") center center/cover;
   }
   .ag-courses-item_title {
     min-height: 87px;
-    margin: 0 0 25px;
+    margin: 0 0 2px;
   
     overflow: hidden;
   
@@ -944,8 +1027,8 @@ background: url("image_assets/car.jpg") center center/cover;
     transition: color .5s ease
   }
   .ag-courses-item_bg {
-    height: 128px;
-    width: 128px;
+    height: 125px;
+    width: 125px;
     background-color: #f9b234;
   
     z-index: 1;
@@ -1033,7 +1116,7 @@ background: url("image_assets/car.jpg") center center/cover;
 
   /* Style the form container */
   .formback{
-    background: linear-gradient(rgb(26, 154, 228), rgb(255, 255, 255));
+    background: linear-gradient(#338bf0, rgb(255, 255, 255));
      padding-bottom: 40px;    
   }
   .form {
@@ -1135,9 +1218,11 @@ background: url("image_assets/car.jpg") center center/cover;
 
 /*===== VARIABLES CSS =====*/
 .facilities{
-    background: linear-gradient(rgb(255, 255, 255),rgb(26, 154, 228));
+    background: linear-gradient(rgb(255, 255, 255),#338bf0);
 text-align: center;
 margin-top: 0%;
+height: fit-content;
+padding-bottom: 2%;
 
 }
 .facilities h1{
@@ -1145,12 +1230,15 @@ margin-top: 0%;
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: -10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
 }
 :root {
   --dark-color-lighten: #f2f5ff;
-  --red-card: #a62121;
-  --blue-card: #4bb7e6;
+  --red-card: #091c35;
+  --blue-card: #6e189c;
   --btn: #141414;
   --btn-hover: #3a3a3a;
   --text: #fbf7f7;
@@ -1190,7 +1278,7 @@ img {
   height: 80%;
   width: 850px;
   margin: auto;
-  padding-top: 5%;
+  padding-top: 2%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1199,7 +1287,7 @@ img {
   position: relative;
   padding: 1rem;
   width: 250px;
-  height: 250px;
+  height: 300px;
   box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
   border-radius: 0.9rem;
   background-color: var(--red-card);
@@ -1212,7 +1300,7 @@ img {
 }
 
 .product-image {
-  height: 130px;
+  height: 170px;
   width: 100%;
   border-radius: 30px;
   margin-top: 20%;
@@ -1228,7 +1316,7 @@ img {
 }
 
 .card:hover .product-image {
-  transform: translate(-1.5rem, -7rem) rotate(-20deg);
+  transform: translate(-1.5rem, -2rem) rotate(-10deg) scale(1.6);
 }
 
 .product-info h2 {
@@ -1279,6 +1367,171 @@ img {
 .fav:hover .svg {
   fill: #000;
 }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+
+
+/* Popup Background */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(4, 24, 47, 0.9); /* Semi-transparent dark background */
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+/* Popup Content Styling */
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #d1d5db; /* Light background */
+  border-radius: 10px;
+  text-align: center;
+  max-height: 90vh;
+  overflow-y: auto;
+  color: #04182f; /* Dark text */
+}
+
+/* Image Container Styling */
+.popup__images {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 15px;
+}
+
+.popup__images img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Show the popup when targeted */
+.popup:target {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #04182f; /* Dark color for close icon */
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Button Styling */
+.button {
+  background-color: #338bf0; /* Primary color for the button */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #04182f; /* Darken on hover */
+}
+
+
+.facilities {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Styling for the grid container */
+.container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for individual cards */
+.card {
+  background: #04182f;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+}
+
+/* Add some hover effect on cards */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Image and text styles */
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: rem;
+}
+
+.product-info h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr; /* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr; /* 1 card per row on phones */
+  }
+}
+
 
 @media screen and (max-width: 400px) {
   body {
@@ -1499,16 +1752,15 @@ margin-right: 0px;
   }
   
   .carousel__container {
-    
     white-space: nowrap;
-    margin: 70px 0px;
+    margin: 7px 0px;
     padding-bottom: 10px;
     display: inline-block;
   }
   
   .categories__title {
-   color: rgb(77, 55, 102);
-    font-size: 28px;
+   color: #338bf0;
+    font-size: 48px;
     position: relative;
     padding-left: 30px;
   }
@@ -1638,7 +1890,8 @@ margin-right: 0px;
   }
   
   footer {
-    background-color: #19302E;
+    background-color: #2f8bcc;
+    background: linear-gradient(rgb(49, 159, 237),black);
     border-top: 1px solid #6EB981;
     font-size: 17px;
     padding: 15px 5px;
@@ -1719,7 +1972,7 @@ margin-right: 0px;
 
 
   .fourcontainer {
-    background: #111;
+    background: #c60000;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     display: flex;
@@ -1748,8 +2001,8 @@ margin-right: 0px;
  }
  
  .cta {
-    background: #333;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    background: #cf1212;
+    box-shadow: 3px 3px 20px rgba(113, 54, 54, 0.2);
     width: 300px;
     height: 450px;
     overflow: hidden;
