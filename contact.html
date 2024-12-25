@@ -1,183 +1,260 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Commercial Cleaning Service</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome CDN -->
-  <script src="https://kit.fontawesome.com/53ce3ec5ec.js" crossorigin="anonymous"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="contact.css"> <!-- Link to the external CSS file -->
-</head>
-<body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Fitness &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
 
-    <nav class="navbar">
+  <!-- 
+	//////////////////////////////////////////////////////
 
-      <div class="navbar-brand">
-          <img src="image_assets/logo.png" alt="Brand Logo" class="logo-image"> SPOTLESS COMMERICAL CLEANING
-        </div>
-        
-        <ul class="nav-links" id="navLinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
 
-        <a href="contact.html" class="contact-button">
-          <i class="fas fa-phone-alt"></i> Contact
-        </a>
-        
-        <div class="hamburger" onclick="toggleNav()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Contact us</h1>
-            <p>Your trusted partner in excellence</p>
-        </div>
-    </section>
+	//////////////////////////////////////////////////////
+	 -->
 
-    <div class="background">
-      <div class="container">
-        <div class="screen">
-          <div class="screen-header">
-            <div class="screen-header-left">
-              <div class="screen-header-button close"></div>
-              <div class="screen-header-button maximize"></div>
-              <div class="screen-header-button minimize"></div>
-            </div>
-            <div class="screen-header-right">
-              <div class="screen-header-ellipsis"></div>
-              <div class="screen-header-ellipsis"></div>
-              <div class="screen-header-ellipsis"></div>
-            </div>
-          </div>
-          <div class="screen-body">
-            <div class="screen-body-item left">
-              <div class="app-title">
-                <span>CONTACT</span>
-                <span>US</span>
-              </div>
-              <div class="app-contact">CONTACT INFO : +91 79017 45856</div>
-            </div>
-            <div class="screen-body-item">
-              <div class="app-form">
-                <div class="app-form-group">
-                  <input class="app-form-control" placeholder="NAME" value="">
-                </div>
-                <div class="app-form-group">
-                  <input class="app-form-control" placeholder="EMAIL">
-                </div>
-                <div class="app-form-group">
-                  <input class="app-form-control" placeholder="CONTACT NO">
-                </div>
-                <div class="app-form-group message">
-                  <input class="app-form-control" placeholder="MESSAGE">
-                </div>
-                <div class="app-form-group buttons">
-                  <button class="app-form-button">CANCEL</button>
-                  <button class="app-form-button">SEND</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="credits">
-          <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
-            <svg class="dribbble" viewBox="0 0 200 200">
-              <g stroke="#ffffff" fill="none">
-                <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
-                <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
-                <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
-                <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
-              </g>
-            </svg>
-            SPOTLESS COMMERCIAL CLEANING
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    
-    
-    <section class="icon-section">
-      <div class="icon-container">
-        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-        <div class="icon-text">SERVICE AREA: Brampton</div>
-      </div>
-      <div class="icon-container">
-        <div class="icon"><i class="fab fa-whatsapp"></i></div>
-        <div class="icon-text">7901745856</div>
-      </div>
-      <div class="icon-container">
-        <div class="icon"><i class="fas fa-envelope"></i></div>
-        <div class="icon-text">idilpreet24@gmail.com</div>
-      </div>
-      <div class="icon-container">
-        <div class="icon"><i class="fas fa-globe"></i></div>
-        <div class="icon-text">portfolio</div>
-      </div>
-    </section>
-    
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-    <div class="map-container">
-      <!-- Replace the src attribute with the embed link you copied from Google Maps -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369063.2609401536!2d-80.089904789285!3d43.72495460687114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b15eaa5d05abf%3A0x352d31667cc38677!2sBrampton%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1730735903330!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+
+	<link rel="stylesheet" href="css/style.css">
 
 
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-  <section class="footercontainer">
-    <footer class="footer">
-      <div class="fader">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col">
-            <h4>company</h4>
-            <ul>
-              <li><a href="#">call</a></li>
-              <li><a href="#">email</a></li>
-              <li><a href="#">privacy policy</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">commercial cleaning</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>links</h4>
-            <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">fAQ</a></li>
-              <li><a href="#">contact</a></li>
-              <li><a href="#">testimonials</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-   </footer>
-  </section>
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="index.html">Fit<span>ness</span></a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="classes.html" class="fh5co-sub-ddown">Classes</a>
+									 <ul class="fh5co-sub-menu">
+									 	<li><a href="left-sidebar.html">Web Development</a></li>
+									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
+										<li>
+											<a href="#" class="fh5co-sub-ddown">Free HTML5</a>
+											<ul class="fh5co-sub-menu">
+												<li><a href="http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
+												<li><a href="http://freehtml5.co/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
+												<li><a href="http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
+												<li><a href="http://freehtml5.co/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
+												<li><a href="http://freehtml5.co/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
+												<li><a href="http://freehtml5.co/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
+											</ul>
+										</li>
+										<li><a href="#">UI Animation</a></li>
+										<li><a href="#">Copywriting</a></li>
+										<li><a href="#">Photography</a></li> 
+									</ul>
+								</li>
+								<li>
+									<a href="schedule.html">Schedule</a>
+								</li>
+								<li><a href="trainer.html">Trainers</a></li>
+								<li><a href="about.html">About</a></li>
+								<li class="active"><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>		
+		</div>
+		<!-- end:fh5co-header -->
+		<div class="fh5co-parallax" style="background-image: url(images/home-image-3.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell animate-box">
+							<h1 class="text-center">Contact Us</h1>
+							<p>Made with love by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end: fh5co-parallax -->
+		<!-- end:fh5co-hero -->
+		<div id="fh5co-contact">
+			<div class="container">
+				<form action="#">
+					<div class="row">
+						<div class="col-md-6 animate-box">
+							<h3 class="section-title">Our Address</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="contact-info">
+								<li><i class="icon-location-pin"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
+								<li><i class="icon-phone2"></i>+ 1235 2355 98</li>
+								<li><i class="icon-mail"></i><a href="#">info@yoursite.com</a></li>
+								<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6 animate-box">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Name">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="submit" value="Send Message" class="btn btn-primary">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- END fh5co-contact -->
+		<div id="map" class="fh5co-map"></div>
+		<!-- END map -->
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">About Us</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+						</div>
+
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">Our Address</h3>
+							<ul class="contact-info">
+								<li><i class="icon-map-marker"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
+								<li><i class="icon-phone"></i>+ 1235 2355 98</li>
+								<li><i class="icon-envelope"></i><a href="#">info@yoursite.com</a></li>
+								<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">Drop us a line</h3>
+							<form class="contact-form">
+								<div class="form-group">
+									<label for="name" class="sr-only">Name</label>
+									<input type="name" class="form-control" id="name" placeholder="Name">
+								</div>
+								<div class="form-group">
+									<label for="email" class="sr-only">Email</label>
+									<input type="email" class="form-control" id="email" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<label for="message" class="sr-only">Message</label>
+									<textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row copy-right">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icons">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2016 Free Html5 <a href="#">Fitness</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
 
 
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
 
-</body>
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
