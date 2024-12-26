@@ -75,7 +75,7 @@
 										<a href="about.html">About Me</a>
 									</li>
 									<li>
-										<a href="contact.html" id="wb">Contact</a>
+										<a href="contact.html">Contact</a>
 									</li>
 								</ul>
 							</nav>
@@ -95,7 +95,7 @@
 								<h2>Welcome to <b>FIT WITH MANPREET</b></h2>
 								<h3>Your Online Fitness Coach</h3>
 								<p>Transform your health and fitness with personalized training, expert guidance, and unwavering motivation.</p>
-								<span><a class="btn btn-primary" href="#" id="wb">Start Your Journey</a></span>
+								<span><a class="btn btn-primary" href="#">Start Your Journey</a></span>
 							</div>
 						</div>
 					</div>
@@ -198,9 +198,9 @@
 						<div class="team-section-grid animate-box" style="background-image: url(images/trans3.jpg);">
 							<div class="overlay-section">
 								<div class="desc">
-									<h3>jaswinder kaur</h3>
-									<span>weight loss</span>
-									<p>"lose 10 kg of weight in 2 months. Manpreet’s personalized plan was exactly what I needed."</p>
+									<h3>Rahul Sharma</h3>
+									<span>Muscle Gain</span>
+									<p>"Gained 10 kg of muscle in 6 months. Manpreet’s personalized plan was exactly what I needed."</p>
 									<p class="fh5co-social-icons">
 										<a href="#"><i class="icon-instagram-with-circle"></i></a>
 									</p>
@@ -228,7 +228,7 @@
 							<img src="images/fit-dumbell.svg" alt="Personalized Workout Plans">
 							<h3>Customized Workout Plans</h3>
 							<p>Get a personalized workout plan tailored to your goals, fitness level, and schedule, designed to deliver optimal results.</p>
-							<span><a href="#" id="wb" class="btn btn-default">Get Started</a></span>
+							<span><a href="#" class="btn btn-default">Get Started</a></span>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -236,7 +236,7 @@
 							<img src="images/fit-dumbell.svg" alt="One-on-One Coaching">
 							<h3>One-on-One Coaching</h3>
 							<p>Receive dedicated guidance and real-time feedback to keep you motivated and on track to achieve your fitness aspirations.</p>
-							<span><a href="#" id="wb" class="btn btn-default">Sign Up</a></span>
+							<span><a href="#" class="btn btn-default">Sign Up</a></span>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -244,7 +244,7 @@
 							<img src="images/fit-dumbell.svg" alt="Nutrition Guidance">
 							<h3>Personalized Nutrition Guidance</h3>
 							<p>Complement your workouts with a customized meal plan to boost your energy and help you achieve your fitness goals faster.</p>
-							<span><a href="#" id="wb" class="btn btn-default">Learn More</a></span>
+							<span><a href="#" class="btn btn-default">Learn More</a></span>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -252,7 +252,7 @@
 							<img src="images/fit-dumbell.svg" alt="Progress Tracking">
 							<h3>Progress Tracking</h3>
 							<p>Monitor your fitness journey with regular assessments, progress reports, and expert insights to stay on track.</p>
-							<span><a href="#" id="wb" class="btn btn-default">Track Progress</a></span>
+							<span><a href="#" class="btn btn-default">Track Progress</a></span>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -260,7 +260,7 @@
 							<img src="images/fit-dumbell.svg" alt="Virtual Training">
 							<h3>Live Virtual Training Sessions</h3>
 							<p>Experience live, interactive training sessions from anywhere, with personalized instructions and real-time adjustments.</p>
-							<span><a id="wb" href="#" class="btn btn-default">Join Now</a></span>
+							<span><a href="#" class="btn btn-default">Join Now</a></span>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -268,7 +268,7 @@
 							<img src="images/fit-dumbell.svg" alt="Support Community">
 							<h3>24/7 Support</h3>
 							<p>Stay connected with constant support, motivation, and answers to your fitness queries whenever you need them.</p>
-							<span><a id="wb" href="#" class="btn btn-default">Contact Us</a></span>
+							<span><a href="#" class="btn btn-default">Contact Us</a></span>
 						</div>
 					</div>
 				</div>
@@ -573,7 +573,7 @@
 							<div class="animate-box">
 								<h1>Start Your Fitness Journey Today</h1>
 								<p>Join us to achieve your fitness goals with personalized training plans and expert guidance.</p>
-								<a href="#contact" class="btn btn-primary" id="wb">Contact Us</a>
+								<a href="#contact" id="b2" class="btn btn-primary">Contact Us</a>
 							</div>
 						</div>
 					</div>
@@ -875,7 +875,13 @@
 
 document.getElementById("wb").addEventListener("click", function () {
     const phoneNumber = "8437586689"; // Replace with your phone number
-    const message = "Hello! i want to start my fitness journey."; // Customize the message
+    const message = "Hello! i want to start my fitness journey"; // Customize the message
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+});
+document.getElementById("b2").addEventListener("click", function () {
+    const phoneNumber = "8437586689"; // Replace with your phone number
+    const message = "Hello! i want to start my fitness journey"; // Customize the message
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
 });
