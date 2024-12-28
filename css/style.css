@@ -23,7 +23,12 @@ body {
 body.fh5co-offcanvas {
   overflow: hidden;
 }
-
+#maintag{
+  color: #4CB648;
+}
+#maintag2{
+  color:white;
+}
 a {
   color: #4CB648;
   -webkit-transition: 0.5s;
@@ -1516,6 +1521,7 @@ right: 20px;
 width: 70px;
 height: 70px; 
 border: none;
+background: transparent;
 overflow: hidden;
 border-radius: 50px;
 }
